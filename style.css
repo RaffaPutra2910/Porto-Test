@@ -20,9 +20,9 @@ body{
   position: relative;
   height: 100%;
  background: rgba(225, 255, 255, .1);
- border: 2px solid rgba(225, 255, 255, .2);
- border-radius: 100px;
- backdrop-filter: blur(30px);
+ border: 2vh solid rgba(225, 255, 255, .2);
+ border-radius: 100vh;
+ backdrop-filter: blur(30vh);
  transform: scale(0);
  animation: zoom-in 1s ease forwards;
  }
@@ -36,7 +36,7 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  padding: 25px 5%;
+  padding: 25vh 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,19 +55,19 @@ body{
   }
  }
  .Logo{
-  font-size: 25px;
+  font-size: 25vh;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
  }
 
  .navbar a {
-  font-size: 18px;
+  font-size: 18vh;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 35px;
-  border-bottom: 2px solid transparent;
+  margin-left: 35vh;
+  border-bottom: 2vh solid transparent;
   transition: .5s;
  }
 
@@ -80,15 +80,15 @@ body{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 45px;            
-  height: 45px;
+  width: 45vh;            
+  height: 45vh;
   background: transparent;        
   border-radius: 50%;     
-  box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10vh #fff;
   color: #333;              
-  font-size: 20px;         
+  font-size: 20vh;         
   text-decoration: none;
-  margin-right: 12px;
+  margin-right: 12vh;
   transition: 0.3s;
 }
 .home {
@@ -96,8 +96,8 @@ body{
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  gap: 50px;
-  padding: 50px 5% 0;
+  gap: 50vh;
+  padding: 50vh 5% 0;
   color: #fff;
   animation-delay: 1.5s;
 }
@@ -105,40 +105,40 @@ body{
   flex: 1; 
 }
  .home-detail h1 {
-  font-size: 55px;
+  font-size: 55vh;
   line-height: 1;
  }
 
  .home-detail h2 {
-  font-size: 32px;
+  font-size: 32vh;
  }
 
  .home-detail p {
-  margin: 10px 0 20px;
+  margin: 10vh 0 20vh;
  }
 .download-social {
-  margin-top: 20px;
+  margin-top: 20vh;
 }
  .home-detail .download-social {
   display: flex;
   align-items: center;
-  gap: 25px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  gap: 25vh;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
  }
  .btn {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 10vh 30vh;
   background: #fff;
-  border: 2px solid #fff;
-  border-radius: 40px;
-  box-shadow: 0 0 10px #fff;
+  border: 2vh solid #fff;
+  border-radius: 40vh;
+  box-shadow: 0 0 10vh #fff;
   color: #333;
   text-decoration: none;
   font-weight: 500;
-  margin-right: 50px;
+  margin-right: 50vh;
   transition: .5s;
-  font-size: 18px;
+  font-size: 18vh;
 
  }
 
@@ -149,39 +149,39 @@ body{
  }
 
  .home-detail .social-icons{
-  margin-left: 20px;
+  margin-left: 20vh;
  }
 
 
  .home-detail .social-icons a {
     display: inline-flex;
-   padding: 8px;
+   padding: 8vh;
 border: #fff;
 border-radius: 50%;
-font-size: 20px;
+font-size: 20vh;
 color: #fff;
 text-decoration: none;
-margin: 0 8px;
+margin: 0 8vh;
 transition: .5s;
  }  
 
   .home-detail .social-icons a:hover {
     background: #fff;
     color: #333;
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10vh #fff;
   }
 
   .home-img {
   flex-shrink: 0; 
-  margin-right: 40px;
+  margin-right: 40vh;
 }
 .home-img .img-box {
   position: relative;
-  width: 250px;
-  height: 250px;
-  border: 2px solid #fff;
+  width: 250vh;
+  height: 250vh;
+  border: 2vh solid #fff;
   border-radius: 50%;
-  box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 20vh #fff;
   overflow: hidden;
 }
 
@@ -189,4 +189,5 @@ transition: .5s;
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
