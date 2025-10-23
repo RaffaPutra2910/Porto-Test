@@ -190,9 +190,9 @@ transition: .5s;
   height: 100%;
   object-fit: cover;
 }
-/* ====== TOMBOL HAMBURGER ====== */
+
 .menu-toggle {
-  display: none; /* disembunyikan di desktop */
+  display: none; 
   flex-direction: column;
   justify-content: space-between;
   width: 28px;
@@ -209,15 +209,15 @@ transition: .5s;
   transition: 0.3s;
 }
 
-/* ====== UNTUK MOBILE ====== */
+
 @media (max-width: 900px) {
-  /* tombol hamburger muncul di HP */
+
   .menu-toggle {
     display: flex;
     z-index: 1000;
   }
 
-  /* sembunyikan navbar saat belum diklik */
+
   .navbar {
     position: absolute;
     top: 80px;
@@ -232,16 +232,15 @@ transition: .5s;
     transition: height 0.3s ease;
   }
 
-  /* tiap link jadi blok vertikal */
   .navbar a {
     display: block;
     margin: 15px 0;
     text-align: center;
   }
 
-  /* saat navbar aktif */
   .navbar.active {
     height: 280px;
     padding: 20px 0;
   }
 }
+
