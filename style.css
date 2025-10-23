@@ -243,4 +243,68 @@ transition: .5s;
     padding: 20px 0;
   }
 }
+/* ========================= */
+/* RESPONSIVE DESIGN (MOBILE)*/
+/* ========================= */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 5%;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 60px;
+    right: 5%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 200px;
+    text-align: center;
+    display: none; /* default disembunyikan */
+    flex-direction: column;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* Tombol burger muncul */
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Saat aktif */
+  .navbar.active {
+    display: flex;
+  }
+
+  /* Home section biar vertikal */
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 5% 20px;
+  }
+
+  .home-detail h1 {
+    font-size: 35px;
+  }
+
+  .home-detail h2 {
+    font-size: 22px;
+  }
+
+  .home-img {
+    margin: 20px 0 0;
+  }
+
+  .home-img .img-box {
+    width: 180px;
+    height: 180px;
+  }
+}
+
 
