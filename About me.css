@@ -1,0 +1,102 @@
+  body {
+        
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+    background-image: url('background\ web\ tes1\ copy.jpg'); 
+    background-size: cover;           
+    background-repeat: no-repeat;     
+    background-position: center;     
+    background-attachment: fixed;     
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+         backdrop-filter: blur(30px);
+            border-radius: 16px;
+            box-shadow: 0 7px 24px #a3cade;
+            padding: 32px 24px;
+           
+       transform: scale(0);
+ animation: zoom-in 1s ease forwards;
+ }
+ @keyframes zoom-in {
+  100% {
+    transform: scale(1);
+  }
+    }
+        
+        
+        h1 {
+            color: #c7c9ca;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .profile-img {
+            display: block;
+            margin: 9 auto 18px auto;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 70%;
+            box-shadow: 0 4px 12px #3f4f57;
+            border: 3px solid #0ea5e9;
+        }
+        .-img {
+            display: block;
+            margin: 9 auto 18px auto;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 70%;
+            box-shadow: 0 4px 12px #3f4f57;
+            border: 3px solid #0ea5e9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 18px;
+        }
+        td {
+            padding: 8px 0;
+            vertical-align: top;
+        }
+        .label {
+            color: #dedede;
+            font-weight: bold;
+            width: 120px;
+        }
+        .footer {
+            text-align: center;
+            color: #dde7fd;
+            font-size: 1rem;
+            margin-top: 24px;
+            font-weight: 600;
+        }
+  .isi{
+    color: aliceblue;
+  }
+
+   .navbar a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+  border-bottom: 2px solid transparent;
+  transition: .5s;
+ }
+
+ .navbar a:hover,
+ .navbar a.active {
+  border-color: #fff;
+
+ }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+  <title>Sosial Media Saya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+  background-image: url('wp1.jpg');
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container{
+      
+       transform: scale(0);
+ animation: zoom-in 1s ease forwards;
+ }
+  .navbar a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-bottom: 2px solid transparent;
+  transition: .5s;
+ }
+
+ .navbar a:hover,
+ .navbar a.active {
+  border-color: #fff;
+
+ }
+ @keyframes zoom-in {
+  100% {
+    transform: scale(1);
+  }
+    }
+    header {
+      text-align: center;
+      padding: 30px;
+      color: #f4f3f3;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    li {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    a {
+      text-decoration: none;
+      color: #ff5722;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #e64a19;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 15px;
+      background: rgba(248, 247, 247, 0.05);
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+         <a href="http://127.0.0.1:3000/DPKK/Kurikulum%20vt/RaffaCV.html?serverWindowId=23ca3879-6206-4a45-9079-1a3a97b5be57#">Kembali</a>
+    </nav>
+<div class="container">
+     
+  <header>
+    <h1>🌐 Sosial Media Saya</h1>
+    <p>Silakan hubungi atau ikuti saya lewat tautan berikut</p>
+  </header>
+
+  <ul>
+    <li>💬 <a href="https://wa.me/6283830596543?text=Halo,%20saya%20tertarik%20dengan%20Anda!" target="_blank">WhatsApp</a></li>
+    <li>✉️ <a href="http://127.0.0.1:3000/bahan%20gabut/nyoba2/Gmail.html" target="_blank">Email</a></li>
+    <li>📷 <a href="https://www.instagram.com/raffaputra.s/" target="_blank">Instagram</a></li>
+    <li>📘 <a href="https://www.facebook.com/jekichen.mboh" target="_blank">Facebook</a></li>
+    <li>🎵 <a href="https://www.tiktok.com/@raffa_0410" target="_blank">TikTok</a></li>
+    <li>▶️ <a href="https://www.youtube.com/@Raffa-k5z" target="_blank">YouTube</a></li>
+    <li>🧑‍💻 <a href="https://github.com/RaffaPutra2910" target="_blank">GitHub</a></li>
+    <li>🔗 <a href="https://www.linkedin.com/in/raffa-putra-a98b08375/" target="_blank">LinkedIn</a></li>
+  </ul>
+
+  <footer>
+    &copy; <span id="year"></span> Sosial Media: Raffa Putra Stevy
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</div>
+</body>
+</html>
