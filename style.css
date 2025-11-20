@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
-
 *{
  margin: 0;
  padding: 0;
@@ -7,26 +6,35 @@
  font-family: "Poppins", sans-serif;
 }
 
-/* Animasi turun */
+
 @keyframes slideDown {
-  0% { opacity: 0; transform: translateY(-50px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
 }
 
 body{
-  height: 100vh;
-  background-image: url(wp1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+ height: 100vh;
+ background-image: url(wp1.jpg);
 }
-
+.h1{
+color: rgb(red, green, blue);
+}
+.bergerak{
+color:rgb(151, 151, 151);
+}
 .container{
  position: relative;
  height: 100%;
- background: rgba(225, 255, 255, .1);
- border: 2px solid rgba(225, 255, 255, .2);
- border-radius: 100px;
- backdrop-filter: blur(30px);
+background: rgba(225, 255, 255, .1);
+border: 2px solid rgba(225, 255, 255, .2);
+border-radius: 100px;
+backdrop-filter: blur(30px);
 }
 
 header{
@@ -40,83 +48,94 @@ header{
  align-items: center;
  z-index: 100;
 }
-
 .Logo{
  font-size: 25px;
  color: #fff;
- font-weight: 600;
  text-decoration: none;
+ font-weight: 600;
 }
 
-/* NAVBAR */
 .navbar a {
+ font-size: 18px;
  color: #fff;
- text-decoration: none;
+  text-decoration: none;
  font-weight: 500;
  margin-left: 35px;
- font-size: 18px;
  border-bottom: 2px solid transparent;
- transition: .4s;
+ transition: .5s;
 }
 
 .navbar a:hover,
 .navbar a.active {
  border-color: #fff;
-}
 
-/* HAMBURGER ICON */
-.menu-toggle {
- display: none;
- font-size: 30px;
- color: white;
- cursor: pointer;
 }
-
-.menu-toggle.open i {
- transform: rotate(90deg);
- transition: .3s;
+.social-icons a {
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ width: 45px; 
+ height: 45px;
+ background: transparent; 
+ border-radius: 50%; 
+ box-shadow: 0 0 10px #fff;
+ color: #333; 
+ font-size: 20px;
+ text-decoration: none;
+ margin-right: 12px;
+ transition: 0.3s;
 }
-
-/* HOME SECTION */
 .home {
  display: flex;
  justify-content: space-between;
  align-items: center;
  height: 100%;
  gap: 50px;
- padding: 100px 5% 0;
+ padding: 50px 5% 0;
  color: #fff;
+ animation-delay: 1.5s;
 }
 
 .home-detail {
- flex: 1;
- animation: slideDown 1s ease-out forwards;
- opacity: 0;
+ flex: 1; 
+  animation: slideDown 1s ease-out forwards;
+  opacity: 0; 
+}
+.home-detail h1 {
+ font-size: 55px;
+ line-height: 1;
 }
 
-.home-detail h1 { font-size: 55px; }
-.home-detail h2 { font-size: 32px; }
+.home-detail h2 {
+ font-size: 32px;
+}
 
-/* Download + Icons */
+.home-detail p {
+ margin: 10px 0 20px;
+}
 .download-social {
+ margin-top: 20px;
+}
+.home-detail .download-social {
  display: flex;
  align-items: center;
  gap: 25px;
  margin-top: 20px;
  margin-bottom: 20px;
 }
-
 .btn {
+ display: inline-block;
  padding: 10px 30px;
  background: #fff;
- border-radius: 40px;
  border: 2px solid #fff;
- color: #333;
- font-size: 18px;
- font-weight: 500;
- text-decoration: none;
- transition: .4s;
+ border-radius: 40px;
  box-shadow: 0 0 10px #fff;
+color: #333;
+ text-decoration: none;
+ font-weight: 500;
+ margin-right: 50px;
+ transition: .5s;
+ font-size: 18px;
 }
 
 .btn:hover {
@@ -125,91 +144,45 @@ header{
  box-shadow: none;
 }
 
-.social-icons a {
- display: inline-flex;
- justify-content: center;
- align-items: center;
- width: 45px;
- height: 45px;
- border-radius: 50%;
- font-size: 20px;
- color: #fff;
- text-decoration: none;
- box-shadow: 0 0 10px #fff;
- transition: .3s;
+.home-detail .social-icons{
+ margin-left: 20px;
 }
 
-.social-icons a:hover {
+
+.home-detail .social-icons a {
+ display: inline-flex;
+padding: 8px;
+border: #fff;
+border-radius: 50%;
+font-size: 20px;
+color: #fff;
+text-decoration: none;
+margin: 0 8px;
+transition: .5s;
+} 
+
+ .home-detail .social-icons a:hover {
  background: #fff;
  color: #333;
-}
+ box-shadow: 0 0 10px #fff;
+ }
 
-/* FOTO PROFIL */
+ .home-img {
+ flex-shrink: 0; 
+ margin-right: 40px;
+}
 .home-img .img-box {
+ position: relative;
  width: 250px;
  height: 250px;
- border-radius: 50%;
  border: 2px solid #fff;
+ border-radius: 50%;
  box-shadow: 0 0 20px #fff;
  overflow: hidden;
 }
 
-.home-img img {
+ .home-img .img-box img {
  width: 100%;
  height: 100%;
  object-fit: cover;
-}
-
-/* ============================
-   RESPONSIVE: MAX 768px
-============================ */
-@media (max-width: 768px) {
-
-  .navbar {
-    display: none;
-    position: absolute;
-    top: 80px;
-    right: 5%;
-    background: rgba(0,0,0,0.6);
-    padding: 15px 20px;
-    border-radius: 15px;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .navbar.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .home {
-    flex-direction: column-reverse;
-    text-align: center;
-    padding: 140px 5% 40px;
-  }
-
-  .home-detail h1 { font-size: 35px; }
-  .home-detail h2 { font-size: 22px; }
-
-  .download-social {
-    flex-direction: column;
-  }
-
-  .home-img .img-box {
-    width: 180px;
-    height: 180px;
-  }
-}
-
-/* Phone kecil */
-@media (max-width: 480px) {
-  .home-detail h1 { font-size: 30px; }
-  .home-detail h2 { font-size: 18px; }
-  .home-img .img-box {
-    width: 150px;
-    height: 150px;
-  }
 }
